@@ -3,3 +3,14 @@
 /Test/obj
 /Test/bin
 /WebBlog/bin
+/.vs/WebBlog/DesignTimeBuild/.dtbcache
+/.vs/WebBlog/config/applicationhost.config
+/.vs/WebBlog/v15/.suo
+/.vs/WebBlog/v15/Server/sqlite3/db.lock
+/.vs/WebBlog/v15/Server/sqlite3/storage.ide
+/.vs/WebBlog/v15/Server/sqlite3/storage.ide-shm
+/.vs/WebBlog/v15/Server/sqlite3/storage.ide-wal
+/.vs/WebBlog/v16/.suo
+/.vs/WebBlog/v16/Server/sqlite3/db.lock
+/.vs/WebBlog/v16/Server/sqlite3/storage.ide
+/.vs/config/applicationhost.config
