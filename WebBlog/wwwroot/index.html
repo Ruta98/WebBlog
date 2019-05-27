@@ -1,0 +1,160 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script src="Script1.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <font size="20"><b>News</b></font>
+    </div>
+
+
+
+
+    <div class="middle" id="add">
+        <div class="blog">
+
+            <div class="article" v-for="article in articles">
+                <h3>
+                    {{ article.head }}
+                </h3>
+                <p>
+                    {{ article.body }}
+                </p>
+                <i class="close_button">
+                    {{ article.nickName }}
+                </i>
+                <br>
+                <template v-if="login">
+                    <p>
+                        <button v-on:click="eopenMessageForm(article.id, article.head, article.body)">edit</button>
+                        <button v-on:click="deleteMessage(article.id)">delete</button>
+                    </p>
+                </template>
+
+            </div>
+            <button v-on:click="loadMoreMessage">more</button>
+
+            <template v-if="flag">
+                <div class="addMessage" >
+                    <button v-on:click="closeMessageForm" class="close_button">close</button>
+                    <div padding="5px" left="5px">
+                        <p>
+                            <label for="topic">topic:</label>
+                            <input v-model="topic"
+                                   size="50">
+                        </p>
+
+                        <p>
+                            <label for="text">text:</label>
+                            <textarea v-model="text"
+                                      cols="90"
+                                      rows="10">
+                            </textarea>
+                        </p>
+
+                        <p>
+                            <button v-on:click="addMessageForm">ok</button>
+                        </p>
+
+                    </div>
+                </div>
+            </template>
+
+
+            <template v-if="eflag">
+
+                <div class="addMessage">
+                    <button v-on:click="closeMessageForm" class="close_button">close</button>
+                    <div>
+                        <p>
+                            <label for="topic">topic:</label>
+                            <input v-model="topic"
+                                   size="50">
+                        </p>
+
+                        <p>
+                            <label for="text">text:</label>
+                            <textarea v-model="text"
+                                      cols="90"
+                                      rows="10"></textarea>
+                        </p>
+
+                        <p>
+                            <button v-on:click="editMessageForm">ok</button>
+                        </p>
+
+                    </div>
+                </div>
+            </template>
+
+
+            <template v-if="rflag">
+                <div class="addUser">
+                    <button v-on:click="closeMessageForm" class="close_button">close</button>
+                    <p>
+                        Login<br>
+                        <input v-model="email" type="text" size="20">
+                    </p>
+                    <p>
+                        Password<br>
+                        <input v-model="password" type="text" size="20">
+                    </p>
+                    <p>
+                        Nickname<br>
+                        <input v-model="nickname" type="text" size="20">
+                    </p>
+                    <p>
+                        Name<br>
+                        <input v-model="name" type="text" size="20">
+                    </p>
+
+                    <button v-on:click="addUser">sign up</button>
+                </div>
+            </template>
+
+        </div>
+
+        <div class="menu">
+            <div class="autor">
+
+                <template v-if="login">
+                    <br>
+                    <br>
+                    <button v-on:click="openMessageForm">add</button>
+                    <br>
+                    <button v-on:click="Exit">exit</button>
+                </template>
+
+                <template v-else>
+                    <p>
+                        Login<br>
+                        <input v-model="email" type="text" size="20">
+                    </p>
+                    <p>
+                        Password<br>
+                        <input v-model="password" type="password" size="20">
+                    </p>
+                    <button v-on:click="Login">login</button>
+                    <button v-on:click="openRegistrationForm">sign up</button>
+                </template>
+            </div>
+
+                <div class="map">
+                    <ul v-for="article in articles">
+                        <li>
+                            {{ article.head }}
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="Script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: absolute;
+    width: 97%;
+    padding-left: 3%;
+    height: 65px;
+    background: #008080;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.footer {
+    width: 95%;
+    height: 50px;
+    background: #008080;
+    color: #ffffff;
+}
+
+
+.middle {
+    position: absolute;
+    width: 90%;
+    top: 75px;
+    padding-left: 40px;
+    padding-bottom: 55px;
+}
+
+.blog {
+    width: 73%;
+    float: left;
+}
+
+.close_button {
+    float: right;
+}
+
+.menu {
+    float: right;
+    width: 25%;
+}
+
+.autor {
+    right: 0px;
+    padding-left: 40px;
+}
+
+.map {
+    right: 0px;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    background: rgba(202, 202, 202, 0.44);
+    position: fixed;
+}
+
+.addMessage {
+    background: #f0ffff;
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    min-height: 200px;
+    padding: 20px;
+    border-color: #008080;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 6px;
+}
+
+.addUser {
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    width: 25%;
+    min-height: 200px;
+    background: #f0ffff;
+    padding: 20px;
+    border-color: #008080;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 6px;
+}
+
+h3 {
+    color: #008080;
+}
+
+.article{
+    border-bottom: dotted;
+    border-bottom-color: #808080;
+}
+button {
+    background: #ffffff;
+    border-color: #dcdcdc;
+    border-radius: 4px;
+    width: 65px;
+    border-width: 1px;
+    color: #808080;
+}
