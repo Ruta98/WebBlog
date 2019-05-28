@@ -165,9 +165,7 @@ var add = new Vue({
         flag: false,
         eflag: false,
         rflag: false,
-        articles: [{ id: 13, head: "New arrrrr Update Alina", body: "Any Test New dfs dfg ngfhmnhfm gh ghjj", authorId: 2, nickName: "Nataly", time: null, pathPhoto: "Foto\\\\10" },
-        { id: 11, head: "11 dsdfvsdfvdsfsd", body: "article 11", authorId: 2, nickName: "Nataly", time: null, pathPhoto: "Foto\\\\10" }
-        ],
+        articles: [{ id: 13, head: "Head article", body: "Body article", authorId: 2, nickName: "Nataly", time: null, pathPhoto: "Foto\\\\10" }],
         topic: '',
         text: '',
         fId: 0,

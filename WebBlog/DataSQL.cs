@@ -30,6 +30,7 @@ namespace WebBlog
             foreach(DataRow dr in ReDB.Rows)
             {
                 var el = new Article(dr);
+               // el.Body = "<pre>"+el.Body.Replace("\n", "</pre><pre>") + "</pre>";
                 Res.Add(el);
             }
             string r = JsonConvert.SerializeObject(Res);
