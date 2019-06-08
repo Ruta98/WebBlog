@@ -23,7 +23,7 @@
                     {{ article.head }}
                 </h3>
                 <p>
-                    {{ article.body }}
+                    <div v-html="article.body"></div>
                 </p>
                 <i class="close_button">
                     {{ article.nickName }}

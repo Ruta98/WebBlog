@@ -74,7 +74,7 @@ namespace SharedLib
         }
         public object ExecuteScalar(string query, Parameter[] parameters = null)
         {
-            DataTable dt = new DataTable();
+            //DataTable dt = new DataTable();
             var command = connection.CreateCommand();
             command.CommandText = query;
             if (parameters != null)
